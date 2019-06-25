@@ -1,11 +1,17 @@
-<div class="container">
-    <h1>Todo List</h1>
-    <h3>Title</h3>
-    <input type="text" class="mainInput" placeholder="title">
-    <ul class="list">
-        <li *ngFor="let listItem of list">
-            <input type="checkbox" class="check"><span class="badge">{{listItem.id}}:  </span>{{listItem.name}}
-            <button class="del">Delete</button>
-        </li>
-    </ul>
+<div class="body">
+    <div class="container">
+        <h1>Todo List</h1>
+        <button class="btn1" routerLink="/add-todo">Add items</button>
+        <h3>Title</h3>
+
+        <input type="text" class="mainInput" placeholder="title">
+
+
+        <ul class="list">
+            <li *ngFor="let listItem of list">
+                <input type="checkbox" class="check"><span class="badge">{{listItem.id}}:  </span>{{listItem.name}}
+                <button class="del" (click)='getItem()'>Delete</button>
+            </li>
+        </ul>
+    </div>
 </div>
