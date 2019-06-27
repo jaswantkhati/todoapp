@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { TodoListService } from 'src/app/services/todo-list.service';
-import{ Location} from "@angular/common"
+import { Location} from "@angular/common"
 
 @Component({
   selector: 'app-add-todo',
@@ -16,10 +16,7 @@ export class AddTodoComponent implements OnInit {
 
   ngOnInit() {
   }
-
-  addTodoItem(formData) {
-   this.todoListService.addTodoItem(formData.taskName);
-  }
+saddTodoItem(formData) {this.todoListService.addTodoItem(formData.taskName);}
   getBack():void{
     this.location.back();
   }

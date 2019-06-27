@@ -23,7 +23,8 @@ export class EditComponent implements OnInit {
 
   getTaskById(id) {
     const list = this.todoListServices.getTaskById(id);
-    this.listName = list.name;  }
+    this.listName = list.name;
+  }
      getBack(): void {
     this.location.back();
   }

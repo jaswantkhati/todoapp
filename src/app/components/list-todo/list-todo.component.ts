@@ -22,7 +22,6 @@ export class ListTodoComponent implements OnInit {
 
   getTodoList() {
     this.list = this.todoListService.getTodoList();
-   
   }
 
   filter(type) {
@@ -39,8 +38,9 @@ export class ListTodoComponent implements OnInit {
       case 'all':
         this.getTodoList();
         break;
+    }
   }
-  }
+
   delete(id) {
     this.list = this.todoListService.deleteTodoitem(id);
   }

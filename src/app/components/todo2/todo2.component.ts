@@ -8,8 +8,7 @@ import { Subscription } from 'rxjs';
   styleUrls: ['./todo2.component.css']
 })
 export class Todo2Component implements OnInit, OnDestroy {
-
-  remaining;
+ remaining;
   subs: Subscription;
    todoList: any;
   constructor(private todoListService: TodoListService) {
