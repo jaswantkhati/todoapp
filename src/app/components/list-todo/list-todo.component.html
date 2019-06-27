@@ -1,11 +1,21 @@
-<div class="container">
-    <h1>Todo List</h1>
-    <h3>Title</h3>
-    <input type="text" class="mainInput" placeholder="title">
-    <ul class="list">
-        <li *ngFor="let listItem of list">
-            <input type="checkbox" class="check"><span class="badge">{{listItem.id}}:  </span>{{listItem.name}}
-            <button class="del">Delete</button>
-        </li>
-    </ul>
+<div class="body">
+    <div class="container">
+        <h1>Todo List</h1>
+        <div class="buttons">
+            <button class="btn1" (click)="filter('all')">All Tasks</button>
+            <button class="btn1" (click)="filter('remaining')">Remaining Tasks</button>
+            <button class="btn1" (click)="filter('completed')">Completed Tasks</button>
+        </div>
+        <ul class="list">
+            <li *ngFor="let listItem of list">
+                <input type="checkbox" class="check" [(ngModel)]="listItem.status" (click)="emitEvent()"><span class="badge">{{listItem.id}}:  </span>{{listItem.name}}
+                <button class="edit" [routerLink]='["/edit",listItem.id]'>Edit</button>
+                <button class="del" (click)='delete(listItem.id)'>Delete</button>
+            </li>
+        </ul>
+        <div class="buttons"><button class="btn1" routerLink="/add-todo">Add Tasks</button></div>
+        <app-todo2></app-todo2>
+        <footer>&copy; copy right 2019 by Jaswant khati</footer>
+
+    </div>
 </div>

@@ -1,0 +1,32 @@
+.main {
+    height: 500px;
+    width: 50%;
+    background-color: rgb(243, 243, 243, .5);
+    margin: auto;
+    padding: 10px;
+    text-align: center;
+}
+
+.input {
+    width: 100%;
+    background-color: rgb(243, 243, 243, .5);
+    border: none;
+    border-bottom: 1px solid black;
+    height: 50px;
+}
+
+button {
+    all: unset;
+    padding: .3em .7em;
+    font-size: 20px;
+    background: #ddd;
+    border-radius: 5px;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, .2);
+    margin-top: 1em;
+    cursor: pointer;
+}
+
+button:disabled {
+    cursor: not-allowed;
+    background: #bbb;
+}

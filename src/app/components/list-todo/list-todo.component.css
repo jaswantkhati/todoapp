@@ -4,9 +4,17 @@
 }
 
 .container {
-    height: 100vh;
-    width: 50%;
+    height: 80%;
+    width: 70%;
     margin: auto;
+    background-color: rgb(243, 243, 243, .5);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.buttons {
+    width: 100%;
+    text-align: center;
 }
 
 .mainInput {
@@ -14,6 +22,7 @@
     border: none;
     border-bottom: 1px solid black;
     font-size: 30px;
+    background-color: rgb(243, 243, 243, .5);
 }
 
 h1 {
@@ -26,11 +35,12 @@ h1 {
 ul {
     list-style-type: none;
     font-size: 30px;
-    color: orange;
+    color: rgb(45, 46, 49);
 }
 
 ul li {
     line-height: 70px;
+    position: relative;
 }
 
 h3 {
@@ -39,11 +49,29 @@ h3 {
 
 .check {
     margin-right: 30px;
-    transform: scale(1. 7)
+    transform: scale(1.6)
 }
 
 .del {
     float: right;
     padding: 5px;
     margin-top: 20px;
+    background-color: yellowgreen;
+}
+
+.edit {
+    padding: 5px 10px;
+    margin-top: 20px;
+    background-color: yellowgreen;
+    right: 20%;
+    position: absolute;
+}
+
+.btn1 {
+    font-size: 30px;
+    padding: 5px;
+    background-color: skyblue;
+    margin: 30px;
+    border-radius: 10px;
+    box-shadow: 3px 2px blueviolet;
 }

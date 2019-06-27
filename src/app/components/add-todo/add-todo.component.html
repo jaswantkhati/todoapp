@@ -1,0 +1,7 @@
+<div class="main">
+    <form (ngSubmit)=addTodoItem(addPoll.value)>
+        <input class="input" type="text"><br>
+        <button [disabled]="addPoll.invalid" (click)="getBack()">ADD</button>
+    </form>
+    <button (click)="getBack()">BACK</button>
+</div>
