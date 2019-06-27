@@ -18,9 +18,7 @@ export class AddTodoComponent implements OnInit {
   }
 
   addTodoItem(formData) {
-    console.log(formData);
-    
-    this.todoListService.addTodoItem(formData.taskName);
+   this.todoListService.addTodoItem(formData.taskName);
   }
   getBack():void{
     this.location.back();

@@ -1,0 +1,7 @@
+<div class="main">
+    <form #addPoll='ngForm' (ngSubmit)=editTodoItem(addPoll.value)>
+        <input class="input" type="text" name="taskName" [(ngModel)]="listName"><br>
+        <button>Edit</button>
+    </form>
+    <button (click)="getBack()">BACK</button>
+</div>

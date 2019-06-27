@@ -7,12 +7,16 @@ import { AppComponent } from './app.component';
 import { ListTodoComponent } from './components/list-todo/list-todo.component';
 import { AddTodoComponent } from './components/add-todo/add-todo.component';
 import { from } from 'rxjs';
+import { Todo2Component } from './components/todo2/todo2.component';
+import { EditComponent } from './components/edit/edit.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ListTodoComponent,
-    AddTodoComponent
+    AddTodoComponent,
+    Todo2Component,
+    EditComponent
   ],
   imports: [
     BrowserModule,

@@ -1,6 +1,7 @@
 <div class="main">
     <form #addPoll='ngForm' (ngSubmit)=addTodoItem(addPoll.value)>
-        <input class="input" type="text" name="taskName" ngModel required><br>
+        <input #ref class="input" type="text" name="taskName" ngModel required><br>
         <button [disabled]="addPoll.invalid" (click)="getBack()">ADD</button>
     </form>
+    <button (click)="getBack()">BACK</button> {{ref.value}}
 </div>

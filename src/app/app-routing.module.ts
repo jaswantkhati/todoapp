@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { AddTodoComponent } from './components/add-todo/add-todo.component';
 import { ListTodoComponent } from './components/list-todo/list-todo.component';
+import { EditComponent } from './components/edit/edit.component'
 
 const routes: Routes = [
   {
@@ -16,7 +17,12 @@ const routes: Routes = [
   {
     path: 'add-todo',
     component: AddTodoComponent
+  },
+  {
+    path: 'edit/:id',
+    component: EditComponent
   }
+  
 ];
 
 @NgModule({
